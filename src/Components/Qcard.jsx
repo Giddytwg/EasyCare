@@ -13,7 +13,7 @@ const Qcard = ({ qna:{q, a} }) => {
                 <p className='font-medium text-sm md:text-base'>{q}</p>
                 <button 
                 onClick={()=>setOpen(open => !open)}>
-                        {open?<img src={plus_icon} alt="" /> : <img src={minus_icon} alt="" />}
+                        {open?<img src={minus_icon} alt="" /> : <img src={plus_icon} alt="" />}
                     </button>
             </div>
             {/* Answer */}
