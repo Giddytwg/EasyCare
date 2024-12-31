@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Comorant";
+  src: url("/CormorantGaramond-Medium.ttf");
+}
+body {
+  box-sizing: border-box;
+  font-family: "MyFont";
+  font-size: 0.8rem;
+}
+
+@layer components {
+  .cta-dark {
+    background-color: #093c6e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    width: fit-content;
+  }
+  .cta-light {
+    background-color: #093b6e11;
+    color: #093c6e;
+    padding: 0.5rem 0.9rem;
+    border-radius: 3rem;
+    font-weight: 600;
+  }
+  .plan-active {
+    background-color: #093c6e;
+    color: white;
+  }
+  .plan-active div {
+    background-color: white;
+    color: #093c6e;
+  }
+
+  .form-input{
+    padding: .6rem;
+    font-size: .8rem;
+    color: rgb(153, 153, 153);
+    width: 100%;
+    border-radius: .3rem;
+    border: rgba(153, 153, 153, 0.493) .1rem solid;
+  }
+  .form-input:focus{
+    border: rgba(153, 153, 153, 0.877) .1rem solid;
+  }
+}
+
+@layer components {
+}
+
+@media (min-width: 640px) {
+}
+
+@layer utilities {
+  .bg-bluegradient {
+    background-image: linear-gradient(130deg, #093c6e, #1273d4);
+  }
+
+  .gradient-border {
+    background: linear-gradient(130deg, #093c6e, #1273d4);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 2px; /* Border width */
+  }
+}
+.navbar {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+a {
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .footer-links a, .footer-contact a {
+      font-size: 0.8rem /* 14px */;
+      line-height: 1.25rem /* 20px */;
+  }
+}
+a.active {
+  color: #093c6e;
+  font-weight: bold;
+}
+
+footer > a {
+  font-size: .5rem;
+  color: red;
+}
+
+/* slider styling
+.slick-slider {
+  margin: auto;
+
+}
+.slick-arrow::before {
+  display: absolute;
+  z-index: 100;
+  width: 2rem;
+}
+.slick-arrow.slick-prev::before {
+  color: black;
+  font-size: 2rem;
+  
+  }
+
+.slick-arrow.slick-next::before {
+color: black;
+font-size: 2rem;
+}
+.about {
+} */
