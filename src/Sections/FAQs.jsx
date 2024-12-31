@@ -1,5 +1,5 @@
 import Heading from "../Components/Heading";
-import QnA from '/public/QnA.jsx';
+import QnA from '../Data/QnA.jsx';
 import Qcard from "../Components/Qcard";
 
 const FAQs = () => {

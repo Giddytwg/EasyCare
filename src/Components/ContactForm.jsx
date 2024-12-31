@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import countries from "../../public/Country"
+import countries from "../Data/Country"
 import { useState } from "react";
 
 

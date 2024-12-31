@@ -1,7 +1,7 @@
 import Heading from "../Components/Heading";
 import ToggleButton from "../Components/ToggleButton";
 import PriceCard from "../Components/PriceCard";
-import Plans from "/public/Plans";
+import Plans from "../Data/Plans";
 
 import { useState } from "react";
 

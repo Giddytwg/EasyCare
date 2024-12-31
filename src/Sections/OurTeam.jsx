@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Heading from "../Components/Heading";
 import TeamCard from "../Components/TeamCard";
-import Doctors from "/public/doctors";
+import Doctors from "../Data/Doctors.jsx";
 
 
 const OurTeam = () => {
